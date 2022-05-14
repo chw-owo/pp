@@ -9,7 +9,7 @@ var util = require('./util');
 var app = express();
 
 // DB setting
-mongoose.connect(process.env.MONGO_DB);
+mongoose.connect('mongodb+srv://chw-owo:gaenary0106@cluster0.aryli.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
 var db = mongoose.connection;
 //db.dropDatabase();
 db.once('open', function(){
